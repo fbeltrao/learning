@@ -1,0 +1,25 @@
+{
+  "name": "customer-api-restify",
+  "version": "1.0.0",
+  "description": "Typescript rest api using restify",
+  "main": "app/server.js",
+  "scripts": {
+    "build": "tsc app/server.ts",
+    "start": "node app/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "restore": "npm install & typings install",
+    "debug": "npm build & npm start"
+  },
+  "author": "fbeltrao",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^8.0.28",
+    "@types/restify": "^5.0.3",
+    "restify": "^6.0.0"
+  },
+  "devDependencies": {
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2",
+    "typings": "^2.1.1"
+  }
+}
