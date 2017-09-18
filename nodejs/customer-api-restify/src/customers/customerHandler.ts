@@ -12,9 +12,9 @@ export class customerHandler {
 
     handleGet(req: restify.Request, res: restify.Response, next: restify.Next) {
 
-        var customers = this.repository.getCustomers();
-        res.write(customers);
-
+        var customers = this.repository.getCustomers();        
+        res.write(JSON.stringify(customers));
+        res.end();
         next();
     }
 }

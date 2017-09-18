@@ -7,8 +7,14 @@
         "removeComments": false,
         "noImplicitReturns": true,
         "noImplicitAny": true,
-        "preserveConstEnums": true
+        "preserveConstEnums": true,
+        "watch": true,
+        "outDir": "app/"
     },
+    "compileOnSave": true,
+    "include": [
+        "src/"
+    ],
     "exclude": [
       "logs",
       "node_modules"

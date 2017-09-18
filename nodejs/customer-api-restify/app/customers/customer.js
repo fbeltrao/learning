@@ -1,11 +1,11 @@
 "use strict";
-exports.__esModule = true;
-var customer = /** @class */ (function () {
-    function customer(lastName, firstName, birthdate) {
+Object.defineProperty(exports, "__esModule", { value: true });
+class customer {
+    constructor(lastName, firstName, birthdate) {
         this.lastName = lastName;
-        this.firstName = firstName;
+        this.firtName = firstName;
         this.birthdate = birthdate;
     }
-    return customer;
-}());
+}
 exports.customer = customer;
+//# sourceMappingURL=customer.js.map

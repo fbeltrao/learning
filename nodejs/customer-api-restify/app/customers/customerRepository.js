@@ -1,19 +1,19 @@
 "use strict";
-exports.__esModule = true;
-var customer_1 = require("./customer");
-var customerRepository = /** @class */ (function () {
-    function customerRepository() {
+Object.defineProperty(exports, "__esModule", { value: true });
+const customer_1 = require("./customer");
+class customerRepository {
+    constructor() {
     }
     // saves customer in repository
-    customerRepository.prototype.saveCustomer = function (customer) {
+    saveCustomer(customer) {
         return customer;
-    };
-    customerRepository.prototype.getCustomers = function () {
+    }
+    getCustomers() {
         var list = new Array();
         list.push(new customer_1.customer('McEnroe', 'Mark', new Date('1950-05-20')));
         list.push(new customer_1.customer('Sinatra', 'Johny'));
         return list;
-    };
-    return customerRepository;
-}());
+    }
+}
 exports.customerRepository = customerRepository;
+//# sourceMappingURL=customerRepository.js.map

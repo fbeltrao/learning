@@ -4,7 +4,7 @@
   "description": "Typescript rest api using restify",
   "main": "app/server.js",
   "scripts": {
-    "build": "tsc app/server.ts",
+    "build": "tsc src/server.ts",
     "start": "node app/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "restore": "npm install & typings install",
@@ -15,6 +15,7 @@
   "dependencies": {
     "@types/node": "^8.0.28",
     "@types/restify": "^5.0.3",
+    "eslint": "^4.7.0",
     "restify": "^6.0.0"
   },
   "devDependencies": {

@@ -1,14 +1,15 @@
 "use strict";
-exports.__esModule = true;
-var customerHandler = /** @class */ (function () {
-    function customerHandler(repository) {
+Object.defineProperty(exports, "__esModule", { value: true });
+class customerHandler {
+    constructor(repository) {
         this.repository = repository;
     }
-    customerHandler.prototype.handleGet = function (req, res, next) {
+    handleGet(req, res, next) {
         var customers = this.repository.getCustomers();
-        res.write(customers);
+        res.write(JSON.stringify(customers));
+        res.end();
         next();
-    };
-    return customerHandler;
-}());
+    }
+}
 exports.customerHandler = customerHandler;
+//# sourceMappingURL=customerHandler.js.map
